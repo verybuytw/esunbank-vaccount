@@ -1,16 +1,6 @@
 Installation
 -------------
 
-`composer.json` append `repositories`
-```json
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@gitlab.cola-hughes.com:vb/esunbank-vaccount.git"
-        }
-    ],
-```
-
 ```shell
 $    composer require vb-payment/esunbank-vaccount
 ```
