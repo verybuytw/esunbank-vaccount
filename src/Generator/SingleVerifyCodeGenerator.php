@@ -68,7 +68,7 @@ class SingleVerifyCodeGenerator extends VerifyCodeGeneratorContract implements V
     {
         $dt = Carbon::createFromTimestamp($datetime)->addDay();
 
-        $number = $dt->dayOfYear.$dt->hour.$number;
+        $number = $dt->dayOfYear.$dt->format('H').$number;
 
         return $this->buildWithAmount($account, $number, $amount);
     }
